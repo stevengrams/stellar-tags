@@ -4,8 +4,8 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "tsx watch server.js",
+    "start": "node init && node server.js",
+    "dev": "node init && tsx watch server.js",
     "test": "jest --forceExit --maxWorkers=2",
     "test:coverage": "jest --coverage --forceExit --maxWorkers=2",
     "test:memory": "node --expose-gc node_modules/.bin/jest --forceExit --testPathPattern=memory --globals '{\"gc\":true}'",
